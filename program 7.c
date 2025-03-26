@@ -60,7 +60,6 @@ void Display(int Msize,int Q[])
     if (front == -1)
     {
         printf("Queue UNDERFLOW!\n");
-        return;
     }
 
     printf("[ ");
