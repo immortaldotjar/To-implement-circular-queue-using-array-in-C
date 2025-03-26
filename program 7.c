@@ -70,8 +70,10 @@ void Display(int Msize,int Q[])
     {
         printf("%d, ", Q[i]);
 
-        if (i == rear)  // Stop when reaching rear
+        if (i == rear)
+        {
             break;
+        }
     }
     
     printf("]\n");
