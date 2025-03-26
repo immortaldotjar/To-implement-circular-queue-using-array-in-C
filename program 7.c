@@ -49,7 +49,9 @@ void Delete(int Msize, int Q[])
             front = rear = -1;
         }
         else
+        {
             front = (front + 1) % Msize;
+        }
     }
 }
 
