@@ -61,21 +61,22 @@ void Display(int Msize,int Q[])
     {
         printf("Queue UNDERFLOW!\n");
     }
-
-    printf("[ ");
-    
-    // Loop from front to rear in a circular manner
-    for (int i = front; ;i = (i + 1) % Msize)
+    else
     {
-        printf("%d, ", Q[i]);
-
-        if (i == rear)
-        {
-            break;
-        }
-    }
+        printf("[ ");
     
-    printf("]\n");
+        // Loop from front to rear in a circular manner
+        for (int i = front; ;i = (i + 1) % Msize)
+        {
+            printf("%d, ", Q[i]);
+    
+            if (i == rear)
+            {
+                break;
+            }
+        }
+        printf("]\n");
+    }
 }
 
 int main()
